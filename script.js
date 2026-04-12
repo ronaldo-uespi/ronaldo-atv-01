@@ -1,20 +1,14 @@
 const projects = [
   {
+    title: "Portfólio MVP (este projeto)",
+    description: "Primeira versão do meu portfólio profissional, com foco em clareza e responsividade.",
+    tags: ["HTML5", "CSS3", "JavaScript"],
+    link: "https://github.com/ronaldo-uespi/ronaldo-atv-01",
+  },
+  {
     title: "Landing Page para Startup",
-    description: "Layout responsivo com foco em conversão e performance.",
-    tags: ["HTML5", "CSS3", "Responsivo"],
-    link: "#",
-  },
-  {
-    title: "Dashboard de Vendas",
-    description: "Interface para visualização rápida de métricas-chave.",
-    tags: ["JavaScript", "Grid", "UI"],
-    link: "#",
-  },
-  {
-    title: "Portfólio Fotográfico",
-    description: "Galeria com filtro por categorias e animações suaves.",
-    tags: ["Flexbox", "Acessibilidade"],
+    description: "Layout responsivo com foco em conversão e apresentação clara do produto.",
+    tags: ["Responsivo", "UX", "UI"],
     link: "#",
   },
 ];
@@ -56,3 +50,17 @@ function renderProjects(list) {
 }
 
 renderProjects(projects);
+
+const themeToggle = document.getElementById("theme-toggle");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+  document.body.classList.add("dark");
+}
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  const isDark = document.body.classList.contains("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+});
