@@ -86,34 +86,6 @@ ronaldo-atv-01/
 2. Abra o arquivo `index.html` diretamente no navegador:
    - Clique duplo em `index.html`
    - Ou arraste o arquivo para o navegador
-   - Ou use um servidor local (veja abaixo)
-
-### Com Servidor Local (Recomendado)
-**Opção 1 - Python 3:**
-```bash
-python -m http.server 8000
-```
-Acesse: `http://localhost:8000`
-
-**Opção 2 - Node.js com http-server:**
-```bash
-npx http-server
-```
-
-**Opção 3 - VSCode com Live Server:**
-- Instale a extensão "Live Server"
-- Clique direito em `index.html` → "Open with Live Server"
-
-## 📊 Responsividade
-
-O projeto utiliza **mobile-first** e é otimizado para:
-
-| Dispositivo | Breakpoint | Layout |
-|------------|-----------|--------|
-| 📱 Celular | < 420px | Stack único, ajustes compactos |
-| 📱 Celular | 420px - 719px | Coluna única, padding menor |
-| 📋 Tablet | 720px - 1023px | 2 colunas (projetos), flex (nav) |
-| 💻 Desktop | ≥ 1024px | 3 colunas (projetos), layout completo |
 
 ## 🎓 Conceitos Demonstrados
 
@@ -143,7 +115,6 @@ Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](L
 **Ronaldo Inácio**
 - 📧 Email: ronaldo.202093@yahoo.com
 - 🐙 GitHub: [@ronaldo-uespi](https://github.com/ronaldo-uespi)
-- 🎓 Atividade 01 - Desenvolvimento Web
 
 ---
 
